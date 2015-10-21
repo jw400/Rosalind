@@ -1,0 +1,20 @@
+def slice_string(s, a, b, c, d): #string, plus four indicies
+    str(s)
+    int(a)
+    int(b)
+    int(c)
+    int(d)
+    sliced = ""
+    sliced = s[a:b+1]
+    sliced += " "
+    sliced += s[c:d+1]
+    return sliced
+
+s = raw_input("Enter string: ")
+a = int(raw_input("Enter first index: "))
+b = int(raw_input("Enter second index: "))
+c = int(raw_input("Enter third index: "))
+d = int(raw_input("Enter fourth index: "))
+        
+
+print slice_string(s, a, b, c, d)
