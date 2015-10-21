@@ -1,0 +1,14 @@
+def add_odds_inbetween(x, y):
+    evens = 0
+    odds = 0
+    for i in range(x, y+1):
+        if i % 2 == 0:
+            evens += i
+        else:
+            odds += i
+    return odds
+
+x = int(raw_input("Enter first integer: "))
+y = int(raw_input("Enter second integer: "))
+
+print add_odds_inbetween(x, y)
