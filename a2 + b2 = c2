@@ -1,0 +1,8 @@
+x = int(raw_input("Enter a: "))
+y = int(raw_input("Enter b: "))
+
+def get_csquared(a, b):
+    c = x ** 2 + y ** 2
+    return c
+
+print "c squared = ", get_csquared(x, y)
