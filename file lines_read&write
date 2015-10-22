@@ -1,0 +1,22 @@
+string = "I hate noodles, I just don't like the texture"
+print string.split() #prints ['I', 'hate', 'noodles,', 'I', 'just', "don't", 'like', 'the', 'texture']
+print string.split(",") #prints ['I hate noodles', " I just don't like the texture"]
+print string.splitlines() #splits the lines, can take arguments
+
+
+
+f = open('C:\\Users\\Joe\\Downloads\\rosalind_ini5(1).txt', 'r')
+file = f.readlines()
+even_story = []
+final = ""
+for line in range(0,(len(file))):
+    if line % 2 != 0: #because file line begins with 0
+        even_story.append(file[line])
+for word in even_story:
+    final += word
+#for future:
+#f = open('filename', 'w')
+#f.write(final)
+#f.close()
+
+print final
