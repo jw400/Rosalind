@@ -1,0 +1,11 @@
+def DNA2RNA(seq):
+    RNA = ""
+    for base in seq.upper():
+        if base == 'T':
+            RNA += 'U'
+        else:
+            RNA += base
+    return RNA
+
+a = raw_input("Sequence: ")
+print DNA2RNA(a)
