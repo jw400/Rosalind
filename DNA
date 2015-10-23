@@ -1,0 +1,19 @@
+def base_count(seq):
+    A = 0
+    C = 0
+    G = 0
+    T = 0
+    for letter in seq.upper():
+        if letter == 'A':
+            A += 1
+        elif letter == 'C':
+            C += 1
+        elif letter == 'G':
+            G += 1
+        elif letter == 'T':
+            T += 1               #done this way because of desired 4 integer sequence output
+    return str(A)+' '+str(C)+' '+str(G)+' '+ str(T)
+    return "A C G T"
+
+a = raw_input("Sequence: ")
+print base_count(a)
