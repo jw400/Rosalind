@@ -1,0 +1,18 @@
+def rev_compliment(seq):
+    rc = ""
+    seq = seq.upper()
+    seq = reversed(seq)
+    for base in seq:
+        if base == 'C':
+            rc += 'G'
+        elif base == 'G':
+            rc += 'C'
+        elif base == 'A':
+            rc += 'T'
+        elif base == 'T':
+            rc += 'A'
+    return rc
+
+
+a = raw_input("Sequence: ")
+print rev_compliment(a)
